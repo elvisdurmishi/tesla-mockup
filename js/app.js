@@ -6,15 +6,15 @@ let blue = document.querySelector('.blue');
 let grey = document.querySelector('.grey');
 
 red.addEventListener('click', () => {
-  carImage.src = '/images/Tesla Car Red.png';
+  carImage.src = 'images/Tesla Car Red.png';
 });
 
 blue.addEventListener('click', () => {
-  carImage.src = '/images/Tesla Car Blue.png';
+  carImage.src = 'images/Tesla Car Blue.png';
 });
 
 grey.addEventListener('click', () => {
-  carImage.src = '/images/Tesla Car Grey.png';
+  carImage.src = 'images/Tesla Car Grey.png';
 });
 
 buttonNgjyra.forEach((link) => link.addEventListener('click', ngjyraActive));
