@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawsome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <link rel="icon" href="images/Tesla.ico" />
+    <title>Tesla Model 3</title>
+  </head>
+  <body>
+    <!-- Nav Section -->
+    <nav>
+      <img class="nav-logo" src="/images/Tesla Logo.png" alt="tesla-logo" />
+      <div class="nav-models">
+        <ul class="nav-list">
+          <li class="nav-items"><a class="nav-link" href="#">Model S</a></li>
+          <li class="nav-items"><a class="nav-link" href="#">Model 3</a></li>
+          <li class="nav-items"><a class="nav-link" href="#">Model X</a></li>
+          <li class="nav-items"><a class="nav-link" href="#">Model Y</a></li>
+          <li class="nav-items"><a class="nav-link" href="#">Powerwall</a></li>
+          <li class="nav-items"><a class="nav-link" href="#">Reload</a></li>
+        </ul>
+      </div>
+      <a class="nav-link" href="#">Tesla Account</a>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container">
+      <div class="model-image">
+        <img
+          class="car-image"
+          src="/images/Tesla Car Red.png"
+          alt="tesla-red-car"
+        />
+      </div>
+      <div class="model-description">
+        <h3 class="kategoria">CARS</h3>
+        <h1 class="car-model-title">Tesla Model 3</h1>
+        <p class="description">
+          Duhet te behet zgjedhja juaj e pare, nje nga makinat me efikase...
+        </p>
+        <hr />
+        <div class="model-color">
+          <h3 class="cilesimet">Ngjyra</h3>
+          <div class="ngjyrat">
+            <button class="btn-color btn-color-active red"></button>
+            <button class="btn-color blue"></button>
+            <button class="btn-color grey"></button>
+          </div>
+        </div>
+        <div class="model-quality">
+          <h3 class="cilesimet">Cilesia</h3>
+          <div class="cilesia">
+            <button class="btn btn-quality btn-quality-active">
+              Fillestare
+            </button>
+            <button class="btn btn-quality">Me disa opsione</button>
+            <button class="btn btn-quality">Full options</button>
+          </div>
+        </div>
+        <a class="faq-link" onclick="togglePopup()" href="#"
+          ><i class="far fa-question-circle fa-lg"></i> Si mund te blej?</a
+        >
+        <hr />
+        <div class="buy-section">
+          <h2 class="price">€ 14'800</h2>
+          <button class="btn btn-green">Porosit</button>
+        </div>
+      </div>
+    </div>
+    <div class="faq-info" id="popup-1">
+      <div class="overlay">
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">&times;</div>
+          <h1 class="faq-title">Si te Blej?</h1>
+          <p class="faq-paragraph">
+            Per te blere nje makine Tesla, ju mund te paguani online me nje
+            <em>Karte Debiti</em> ose <em>Karte Krediti</em>. Opsioni tjeter
+            eshte te vizitoni nje nga pikat tona te shitjes. Mund te klikoni
+            <a href="#">linkun</a> per te pare harten e pikave tona te shitjes.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
